@@ -1,8 +1,7 @@
-.bg{
-  background-image: url('../images/forest.jpeg') center no-repeat;
+.bg-cover{
+  background-position: center center;
+  background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
-  width: 100%;
 }
 .wrap{
   width: 650px;
@@ -56,6 +55,7 @@
 .addList .send{
   padding: 10px;
   cursor: pointer;
+  margin-right: 10px;
   @include breakpoint(mobile375){
     padding: 4px 2px;
     font-size: 16px;

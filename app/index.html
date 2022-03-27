@@ -4,21 +4,20 @@ layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
-<div class="container-fluid bg">
-  <div class="container">
-    <div class="wrap clearfix">
-      <div class="img">
-        <img src="./assets/images/Lily.png" alt="" class="logo">
-        <input type="button" class="reset btn btn-warning mt-4 hover d-sm-none d-lg-block" value="重新設定">
+
+<div class="container-fluid vh-100 bg-cover" style="background-image: url('./assets/images/forest.jpeg');">
+  <div class="wrap clearfix">
+    <div class="img">
+      <img src="./assets/images/Lily.png" alt="" class="logo">
+      <input type="button" class="reset btn btn-warning mt-4 hover d-sm-none d-lg-block d-block" value="重新設定">
+    </div>
+    <div class="content">
+      <div class="addList">
+        <input type="text" class="text" placeholder="請填寫代辦內容" required>
+        <input type="button" class="send btn btn-success" value="加入代辦">
       </div>
-      <div class="content">
-        <div class="addList">
-          <input type="text" class="text" placeholder="請填寫代辦內容" required>
-          <input type="button" class="send btn btn-success py-2 py-sm-0" value="加入代辦">
-        </div>
-        <ul class="list"></ul>
-        <input type="button" class="reset btn btn-warning mt-4 hover d-lg-none d-sm-block" value="重新設定">
-      </div>
+      <ul class="list"></ul>
+      <input type="button" class="reset btn btn-warning mt-4 hover d-lg-none d-sm-block" value="重新設定">
     </div>
   </div>
 </div>
