@@ -1,5 +1,60 @@
-.index__h1 {
-  color:#00cc99;
-  font-size: 20px;
-  font-weight: 400;
+html{
+  background: url('./assets/images/forest.jpeg') center no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.wrap{
+  width: 650px;
+  margin: 0 auto;
+  margin: 100px auto;
+  padding: 1em;
+  text-align: center;
+}
+.img{
+  float: left;
+  width: 250px;
+  
+}
+.logo{
+  width: 180px;
+  height: 200px;
+}
+.content{
+  float: right;
+  width: 350px;
+  text-align: left;
+}
+.clearfix{
+  overflow: auto;
+  zoom: 1;
+}
+.list{
+  margin: 0;
+  padding: 50px 100px 100px 0;
+  text-align: left;
+  list-style: none; /*清除li前面的小黑點*/
+}
+.list li{
+  border-bottom: 1px solid rgb(252, 250, 250);
+  padding: 10px 0;
+}
+.addList{
+  margin-top: 20px;
+}
+.addList .text{
+  padding: 10px;
+  border: 2px solid rgb(73, 41, 10);
+}
+.addList .send{
+  padding: 10px;
+  cursor: pointer;
+  background: #e8a874;
+}
+
+.hover:hover{
+  color: white;
+}
+.wordColor{
+  color: white;
 }
