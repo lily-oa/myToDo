@@ -16,36 +16,13 @@ body {
   }
 }
 .wrap{
-  width: 650px;
   margin: 0 auto;
   margin: 100px auto;
   padding: 1em;
   text-align: center;
 }
-.img{
-  float: left;
-  width: 250px;
-  @include breakpoint(mobile375){
-    float: none;
-  }
-  
-}
-.logo{
-  width: 180px;
-  height: 200px;
-}
 .content{
-  float: right;
-  width: 350px;
   text-align: left;
-  @include breakpoint(mobile375){
-    float: none;
-    
-  }
-}
-.clearfix{
-  overflow: auto;
-  zoom: 1;
 }
 .list{
   margin: 0;
