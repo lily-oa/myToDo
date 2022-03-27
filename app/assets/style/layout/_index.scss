@@ -27,6 +27,10 @@ html{
   float: right;
   width: 350px;
   text-align: left;
+  @include breakpoint(mobile375){
+    float: none;
+    text-align: center;
+  }
 }
 .clearfix{
   overflow: auto;
@@ -44,6 +48,9 @@ html{
 }
 .addList{
   margin-top: 20px;
+  @include breakpoint(mobile375){
+    
+  }
 }
 .addList .text{
   padding: 10px;
