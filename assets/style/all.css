@@ -99,7 +99,7 @@ body {
 }
 
 .list li {
-  border-bottom: 1px solid #fcfafa;
+  border-bottom: 1px solid #606021;
   padding: 10px 0;
 }
 
@@ -140,7 +140,7 @@ body {
 }
 
 .wordColor {
-  color: white;
+  color: #02b8f5;
 }
 
 /*# sourceMappingURL=all.css.map */
