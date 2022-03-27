@@ -121,7 +121,7 @@ body {
   width: 100%;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 320px) {
   .addList .text {
     width: 50%;
   }
