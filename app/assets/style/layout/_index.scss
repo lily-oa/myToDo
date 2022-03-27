@@ -45,7 +45,7 @@ body {
   padding: 10px;
   border: 2px solid rgb(73, 41, 10);
   width: 100%;
-  @include breakpoint(mobile375){
+  @include breakpoint(mobile320){
     width: 50%;
   }
 }

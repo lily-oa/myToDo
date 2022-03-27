@@ -25,4 +25,9 @@
       @content;
     }
   }
+  @else if $point == mobile320 {
+    @media only screen and(max-width: 320px) {
+      @content;
+    }
+  }
 }
