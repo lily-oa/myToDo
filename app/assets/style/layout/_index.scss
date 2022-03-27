@@ -11,9 +11,6 @@ body {
   background-color: rgba(236, 237, 205, 0.5);  /* 透明背景*/
   width: 80%;
   margin: 0 auto;
-  @include breakpoint(mobile576){
-    width: 80%;
-  }
 }
 .wrap{
   margin: 0 auto;
@@ -39,15 +36,15 @@ body {
 }
 .addList{
   margin-top: 20px;
-  flex-wrap: nowrap;
+  @include breakpoint(mobile375){
+    display-flex: flex;
+    flex-direction: column !important;
+  }
 }
 .addList .text{
   padding: 10px;
   border: 2px solid rgb(73, 41, 10);
   width: 100%;
-  @include breakpoint(mobile320){
-    width: 50%;
-  }
 }
 .addList .send{
   padding: 10px;
