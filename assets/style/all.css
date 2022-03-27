@@ -31,11 +31,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
-  line-height: 1;
-  background-color: rgba(236, 237, 205, 0.5);
-  /* 透明背景*/
-  width: 80%;
-  margin: 0 auto;
+  line-height: 1.5;
 }
 
 ol, ul {
@@ -57,11 +53,17 @@ table {
   border-spacing: 0;
 }
 
-html {
-  background: url("../images/forest.jpeg") center no-repeat;
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle !important;
+}
+
+.bg-cover {
+  background-position: center center;
+  background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
-  width: 100%;
 }
 
 .wrap {
@@ -94,6 +96,12 @@ html {
   text-align: left;
 }
 
+@media only screen and (max-width: 375px) {
+  .content {
+    float: none;
+  }
+}
+
 .clearfix {
   overflow: auto;
   zoom: 1;
@@ -124,6 +132,14 @@ html {
 .addList .send {
   padding: 10px;
   cursor: pointer;
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 375px) {
+  .addList .send {
+    padding: 4px 2px;
+    font-size: 16px;
+  }
 }
 
 .hover:hover {
