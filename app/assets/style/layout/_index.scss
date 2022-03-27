@@ -20,6 +20,9 @@ body {
   margin: 100px auto;
   padding: 1em;
   text-align: center;
+  @include breakpoint(mobile375){
+    margin: 0 auto;
+  }
 }
 .content{
   text-align: left;
@@ -40,6 +43,7 @@ body {
 .addList .text{
   padding: 10px;
   border: 2px solid rgb(73, 41, 10);
+  width: 100%;
 }
 .addList .send{
   padding: 10px;
@@ -48,6 +52,7 @@ body {
   @include breakpoint(mobile375){
     padding: 4px 2px;
     font-size: 16px;
+    margin-top: 10px important;
   }
 }
 
