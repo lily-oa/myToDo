@@ -1,0 +1,23 @@
+// 參考 Wendy03 所做網頁她所做的設定 https://github.com/Wendy03/glasses_gulp/blob/main/app/assets/style/config/_media.scss
+
+@mixin breakpoint($point) {
+  @if $point == pad1040 {
+    @media only screen and(max-width: 1040px) {
+      @content;
+    }
+  } @else if $point == pad992 {
+    @media only screen and(max-width: 992px) {
+      @content;
+    }
+  }
+  @else if $point == phone767 {
+    @media only screen and(max-width: 767px) {
+      @content;
+    }
+  }
+  @else if $point == mobile375 {
+    @media only screen and(max-width: 375px) {
+      @content;
+    }
+  }
+}
