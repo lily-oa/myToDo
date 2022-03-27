@@ -15,6 +15,11 @@
       @content;
     }
   }
+  @else if $point == mobile576 {
+    @media only screen and(max-width: 576px) {
+      @content;
+    }
+  }
   @else if $point == mobile375 {
     @media only screen and(max-width: 375px) {
       @content;

@@ -11,6 +11,9 @@ body {
   background-color: rgba(236, 237, 205, 0.5);  /* 透明背景*/
   width: 80%;
   margin: 0 auto;
+  @include breakpoint(mobile576){
+    width: 80%;
+  }
 }
 .wrap{
   width: 650px;
