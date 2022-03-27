@@ -73,45 +73,21 @@ body {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 576px) {
+  .banner {
+    width: 80%;
+  }
+}
+
 .wrap {
-  width: 650px;
   margin: 0 auto;
   margin: 100px auto;
   padding: 1em;
   text-align: center;
 }
 
-.img {
-  float: left;
-  width: 250px;
-}
-
-@media only screen and (max-width: 375px) {
-  .img {
-    float: none;
-  }
-}
-
-.logo {
-  width: 180px;
-  height: 200px;
-}
-
 .content {
-  float: right;
-  width: 350px;
   text-align: left;
-}
-
-@media only screen and (max-width: 375px) {
-  .content {
-    float: none;
-  }
-}
-
-.clearfix {
-  overflow: auto;
-  zoom: 1;
 }
 
 .list {

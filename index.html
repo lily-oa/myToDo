@@ -19,21 +19,24 @@
   <body>
     
     
-<div class="container-fluid bg-cover">
+<div class="container">
   <div class="banner">
-    <div class="wrap clearfix">
-      <div class="img d-flex flex-column align-items-center">
+    <div class="row wrap d-flex">
+
+      <div class="col-lg-4 col-md-2 img d-flex flex-column align-items-center">
         <img src="./assets/images/Lily.png" alt="" class="logo">
         <input type="button" class="reset btn btn-warning mt-4 hover d-sm-none d-lg-block" value="重新設定">
       </div>
-      <div class="content">
-        <div class="addList">
-          <input type="text" class="text" placeholder="請填寫代辦內容" required>
-          <input type="button" class="send btn btn-success" value="加入代辦">
+
+      <div class=" col-lg-8 col-md-10 content">
+        <div class="addList row">
+          <input type="text" class="col-sm-8 text" placeholder="請填寫代辦內容" required>
+          <input type="button" class="col-sm-3 send btn btn-success ms-2" value="加入代辦">
         </div>
         <ul class="list"></ul>
         <input type="button" class="reset btn btn-warning mt-4 hover d-lg-none d-sm-block" value="重新設定">
       </div>
+
     </div>
 </div>
 </div>
