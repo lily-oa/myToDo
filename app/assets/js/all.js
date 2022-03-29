@@ -25,7 +25,7 @@ function addData(e){
   }
   data.push(todo);
   localStorage.setItem('listData', JSON.stringify(data));
-  textValue.value = '';
+  textValue.value = '';  // 清空 ul
   updateList(data);
 }
 
