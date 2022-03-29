@@ -2,5 +2,5 @@ JS 初階課程
 
 第一次做的 toDoList
 
-pages: https://mytodo.red2.live/
+pages: https://lily-oa.github.io/myToDo/
 ----------------------------------------------------------------------
