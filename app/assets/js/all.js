@@ -52,9 +52,6 @@ function deleteData(e){
 
 // 重新設定 為了清空 localStorage 以及重新渲染畫面
 function cleanAllData(){
-  const data = [];
-  localStorage.setItem('listData', JSON.stringify(data));
-  updateList(data);
-  // localStorage.clear();     //清除localStorage 裡的所有資料
-  // window.location.reload();  //重新刷新頁面
+  localStorage.clear();     //清除localStorage 裡的所有資料
+  window.location.reload();  //重新刷新頁面
 }
