@@ -29,8 +29,9 @@ function addData(e) {
     content: txt
   };
   data.push(todo);
-  updateList(data);
   localStorage.setItem('listData', JSON.stringify(data));
+  textValue.value = '';
+  updateList(data);
 } //更新
 
 
@@ -43,7 +44,6 @@ function updateList(data) {
   }
 
   list.innerHTML = str;
-  textValue.value = '';
 } //刪除
 
 
@@ -58,12 +58,13 @@ function deleteData(e) {
   data.splice(index, 1);
   localStorage.setItem('listData', JSON.stringify(data));
   updateList(data);
-} // 重新設定
+} // 重新設定 為了清空 localStorage 以及重新渲染畫面
 
 
 function cleanAllData() {
-  localStorage.clear(); //清除localStorage 裡的所有資料
-
-  window.location.reload(); //重新刷新頁面
+  var data = [];
+  localStorage.setItem('listData', JSON.stringify(data));
+  updateList(data); // localStorage.clear();     //清除localStorage 裡的所有資料
+  // window.location.reload();  //重新刷新頁面
 }
 //# sourceMappingURL=all.js.map
