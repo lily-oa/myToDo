@@ -62,9 +62,8 @@ function deleteData(e) {
 
 
 function cleanAllData() {
-  var data = [];
-  localStorage.setItem('listData', JSON.stringify(data));
-  updateList(data); // localStorage.clear();     //清除localStorage 裡的所有資料
-  // window.location.reload();  //重新刷新頁面
+  localStorage.clear(); //清除localStorage 裡的所有資料
+
+  window.location.reload(); //重新刷新頁面
 }
 //# sourceMappingURL=all.js.map
